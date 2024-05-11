@@ -17,6 +17,7 @@ export default {
         'textoClaro': '#E7E7EB',
         'textoMedio': '#A09FB1',
         'textoOscuro': '#88869D',
+        'textoSearch': '#616475'
 
 
       },
