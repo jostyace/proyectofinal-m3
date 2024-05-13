@@ -33,10 +33,10 @@ export const MainScreen = ({
   const datos = weather;
 
   return (
-    <div className="w-full md:fixed lg:w-2/6 md:w-5/12 font-raleway h-screen bg-normal text-textoMedio ">
+    <div className="w-full md:fixed lg:w-2/6  md:w-5/12 font-raleway h-screen bg-normal text-textoMedio ">
       <div
         id="iconsContainer"
-        className="w-full h-[10vh] flex px-10 pt-8 justify-between "
+        className="w-full  h-[10vh] flex px-10 pt-8 justify-between "
       >
         <Buttons
           tipo="w-auto rounded-sm px-6  py-2"
@@ -76,7 +76,7 @@ export const MainScreen = ({
         id="imageWeatherContainer"
         className="bg-fondo h-[40vh] xl:bg-contain flex justify-center items-center bg-center bg-cover  bg-no-repeat"
       >
-        <img className="w-[80%]" src={`/weather/${info.icon}.svg`} />
+        <img className="w-[80%] z-[-99]" src={`/weather/${info.icon}.svg`} />
       </div>
 
       <div
