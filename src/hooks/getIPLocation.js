@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {  } from '../config/config.js'
+
 
 const useIpLocation = () => {
   const [location, setLocation] = useState({ latitude: null, longitude: null });
