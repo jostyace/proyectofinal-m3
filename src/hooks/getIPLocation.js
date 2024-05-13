@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import {  } from '../config/config.js'
-const IP_TOKEN = process.env.IP_TOKEN;
 
 const useIpLocation = () => {
   const [location, setLocation] = useState({ latitude: null, longitude: null });
@@ -8,7 +7,7 @@ const useIpLocation = () => {
   useEffect(() => {
     const ubicacionIP = async () => {
       try {
-        const ipResponse = await fetch(`https://ipinfo.io/json?token=${IP_TOKEN}`);
+        const ipResponse = await fetch('https://ipinfo.io/json?token=6aae16c17023dd');
         if (!ipResponse.ok) {
           throw new Error(' Error al obtener la la IP');
         }
