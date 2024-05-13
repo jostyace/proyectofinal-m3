@@ -11,7 +11,7 @@ export const DataContainer = ({
   proximosDias,
 }) => {
   return (
-    <div className="w-full min-h-screen xl:px-24 h-full md:absolute md:right-0 lg:px-18  sm:!h-full lg:w-4/6  md:w-7/12 text-textoClaro bg-oscuro py-0 px-10 sm:px-46  sm:pb-12 sm:pt-8">
+    <div className="w-full min-h-screen xl:px-32 h-full md:absolute md:right-0 lg:px-18  sm:!h-full lg:w-4/6  md:w-7/12 text-textoClaro bg-oscuro py-0 px-10 sm:px-46  sm:pb-12 sm:pt-8">
       <div className="flex w-full gap-3 justify-end">
         <Buttons
           tipo={`${
@@ -59,7 +59,7 @@ export const DataContainer = ({
       </div>
       <div className="w-full">
         <h1 className=" text-2xl !pb-8 font-semibold">Today's Highlights</h1>
-        <div className="flex relative pb-20 justify-between w-full gap-9 lg:gap-6 flex-wrap">
+        <div className="flex relative pb-10 justify-between w-full gap-9 lg:gap-6 flex-wrap">
           <ExtraData
             numero={wind && parseInt(wind.speed)}
             medida="mph"
@@ -85,8 +85,8 @@ export const DataContainer = ({
             titulo="Air Pressure"
             tipo="otro"
           />
-          <div className="w-full absolute bottom-0 bg-transparent text-center pb-3">
-            Creado por Joseph
+          <div className="w-full absolute text-textoMedio bottom-0 right-0 bg-transparent text-center ">
+            Creado por Joseph Yagual - Proyecto Final M3 - Funval 
           </div>
         </div>
       </div>

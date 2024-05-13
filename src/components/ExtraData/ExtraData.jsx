@@ -32,16 +32,16 @@ export const ExtraData = ({ numero, medida, titulo, tipo, rotate }) => {
 
   return (
     <div
-      className={`font-raleway w-full flex justify-center items-center  xl:min-h-[180] lg:min-h-[45px] lg:h-[140px] lg:w-[48%] lg:min-w-[48%] flex-col left-0 min-w-80  bg-normal text-textoClaro ${
+      className={`font-raleway w-full flex justify-center items-center lg:max-h-[170px]  lg:min-h-[45px] lg:h-[140px] lg:w-[48%] lg:min-w-[48%] flex-col left-0 min-w-80  bg-normal text-textoClaro ${
         tipo === "otro"
           ? "h-40 gap-1"
-          : "h-52 min-h-52 xl:h-[180px] gap-1 xl:gap-3"
+          : "h-52 min-h-52 xl:h-[180px] gap-1 xl:gap-2"
       }`}
     >
       <span className="font-normal text-base">{titulo}</span>
       <div className=" font-semibold text-4xl xl:text-6xl  text">
         {numero || 0}
-        <span className=" font-normal text-4xl">{medida}</span>
+        <span className=" font-normal xl:text-3xl text-4xl">{medida}</span>
       </div>
       {tipo === "wind" && (
         <div id="windSpeed" className="flex gap-3 pt-3">
@@ -84,8 +84,9 @@ export const ExtraData = ({ numero, medida, titulo, tipo, rotate }) => {
               style={{ width: `${numero}%` }}
               className={`rounded-3xl bg-primario h-2`}
             ></div>
-            <span className="my-3">% </span>
+            
           </div>
+          <span className="w-full text-right">% </span>
         </div>
       )}
     </div>
