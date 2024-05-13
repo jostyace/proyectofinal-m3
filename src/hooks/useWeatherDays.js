@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+const OW_API = process.env.OW_API;
 
 const useWeatherForecast = (latitude, longitude) => {
   const [forecastData, setForecastData] = useState(null);
@@ -8,7 +9,7 @@ const useWeatherForecast = (latitude, longitude) => {
       if (latitude && latitude !== "" && longitude && longitude !== "") {
         try {
           const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=a9e44b3b02d3b162ebd4784eb98960ca&units=metric`
+            `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${OW_API}&units=metric`
           );
           if (!response.ok) {
             throw new Error("Failed to fetch data");
