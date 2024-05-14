@@ -76,7 +76,7 @@ export const MainScreen = ({
         id="imageWeatherContainer"
         className="bg-fondo h-[40vh] xl:bg-contain flex justify-center items-center bg-center bg-cover  bg-no-repeat"
       >
-        <img className="w-[80%] z-[-2" src={`/weather/${info.icon}.svg`} />
+        <img className="w-[80%] z-[-2]" src={`/weather/${info.icon}.svg`} />
       </div>
 
       <div
